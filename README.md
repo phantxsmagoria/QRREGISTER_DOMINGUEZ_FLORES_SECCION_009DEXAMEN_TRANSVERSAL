@@ -49,5 +49,6 @@ Los testing se encuentran en la carpeta DOCENTE bajo el nombre de E2E.
 # Notas adicionales ( APKS ) :
 
 El APK DOCENTE contiene la API QR.
+El APK ALUMNO contiene el Escaner QR.
 
 Gracias.

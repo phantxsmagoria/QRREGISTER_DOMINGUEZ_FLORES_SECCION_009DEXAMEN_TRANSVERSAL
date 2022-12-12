@@ -1,0 +1,36 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button  
+          defaultHref="/"
+          text=""
+          color="duoc"
+          mode="ios"> </ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+
+  <div>
+
+        <ion-card>
+
+          <ion-card-content class="ion-text-center">
+
+            <ion-button class="botonesinicio" (click)="scan()" >
+              Escanear código QR
+            </ion-button>
+            
+            {{code}}
+
+
+
+          </ion-card-content>
+
+        </ion-card>
+  </div>
+</ion-content>

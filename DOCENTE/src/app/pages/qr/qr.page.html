@@ -1,0 +1,50 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button  
+          defaultHref="/"
+          text=""
+          color="duoc"
+          mode="ios"> </ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content class="background">
+  <ion-card>
+    <ion-card-content class="ion-text-center"> 
+
+      <ion-item>
+        <ion-label class="smalltext">Módulo: </ion-label>
+        <ion-input class="smalltext" type="text" [(ngModel)]="usuario.modulo" required> </ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label class="smalltext">Sección: </ion-label>
+        <ion-input class="smalltext" type="text" [(ngModel)]="usuario.seccion" required> </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="smalltext" >Fecha: </ion-label>
+        <ion-input class="smalltext" type="text" [(ngModel)]="usuario.fecha" placeholder="dd/mm/yyy" required> </ion-input>
+      </ion-item>
+
+      <ion-button class="botonesiniciosinfondo" (click)="GenerarQr()" fill="outline" >
+        Activar Qr
+      </ion-button>
+
+      <qrcode
+        [qrdata]="qrCodeString"
+        [width]="256"
+        [errorCorrectionLevel]="'M'">
+      </qrcode>
+
+
+    </ion-card-content>
+    
+  </ion-card>
+
+</ion-content>
